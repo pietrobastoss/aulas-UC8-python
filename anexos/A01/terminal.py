@@ -1,10 +1,21 @@
 """A01 — prática 1. Use somente nome e idade fictícios."""
 
 def conferir(nome, idade_texto):
-    # TODO: retirar espaços nas pontas e recusar nome sem texto.
-    # TODO: converter idade para int, tratar ValueError e exigir idade > 0.
-    # TODO: retornar mensagem coerente; não gravar arquivos.
-    return "Complete a função conferir antes de concluir os testes."
+    
+    nome_limpo = nome.strip()
+    if not nome_limpo:
+        return "Erro: Não pode estar vazio ou apenas espaços."
+    
+    try:
+        idade = int(idade_texto)
+    except ValueError:
+        return "A idade deve ser um número inteiro"
+    
+    if idade <= 0:
+        return "A idade deve ser maior que zero"
+    
+    return f"\n### Cadastro Válido!### \nNome: {nome_limpo}\nIdade: {idade} anos."
+
 
 
 if __name__ == "__main__":
