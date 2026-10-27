@@ -5,13 +5,13 @@ Arquivo e interpretador executados: exercicio01.py, exercicio02.py / Python 3.14
 
 ## Retomada sem consulta
 1. O que get devolve? Por que int pode falhar?
-Minha resposta inicial: O método get() devolve o valor atual do campo em formato de string (texto). O int() pode falhar gerando um ValueError se tentar converter caracteres alfabéticos ou strings vazias que não representam números inteiros válidos.
+ O método get() devolve o valor atual do campo em formato de string (texto). O int() pode falhar gerando um ValueError se tentar converter caracteres alfabéticos ou strings vazias que não representam números inteiros válidos.
 
 2. O que muda entre passar uma função e chamá-la ao ligar um botão?
-Minha resposta inicial: Passar a função sem parênteses (ex: `command=funcao`) diz ao botão para executá-la apenas quando o usuário clicar. Colocar parênteses (ex: `command=funcao()`) executaria a função imediatamente no momento em que a interface é construída, antes de qualquer clique.
+ Passar a função sem parênteses (ex: `command=funcao`) diz ao botão para executá-la apenas quando o usuário clicar. Colocar parênteses (ex: `command=funcao()`) executaria a função imediatamente no momento em que a interface é construída, antes de qualquer clique.
 
 3. Que caso detecta um nome preenchido somente com espaços?
-Minha resposta inicial: A validação que aplica `.strip()` no texto e verifica se o resultado é uma string vazia (`if not nome:` ou `if len(nome) == 0:`), pois o strip remove os espaços em branco das pontas.
+A validação que aplica `.strip()` no texto e verifica se o resultado é uma string vazia (`if not nome:` ou `if len(nome) == 0:`), pois o strip remove os espaços em branco das pontas.
 
 ## Preveja e depois execute (nomes sempre fictícios)
 | Caso | Estado/ação | Previsão | Observação | Ajuste |
